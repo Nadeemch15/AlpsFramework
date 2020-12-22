@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 namespace AlpsFrameWork.BaseClasses
 {
     [TestClass]
-    class BaseClass
+    public class BaseClass
     {
         private static IWebDriver GetFirefoxDriver()
         {
@@ -35,7 +35,7 @@ namespace AlpsFrameWork.BaseClasses
         }
 
         [AssemblyInitialize]
-        public static void InitWebdriver()
+        public static void InitWebdriver(TestContext tc)
         {
             ObjectRepository.Config = new AppConfigReader();
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AlpsFrameWork.BaseClasses
 {
-    class ObjectRepository
+    public class ObjectRepository
     {
         public static IWebDriver Driver { get; set; }
         public static IConfig Config{ get; set; }
